@@ -11,14 +11,17 @@
         android:text="@string/practica_de_codigo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/etName"
-        app:layout_constraintEnd_toEndOf="@+id/etName"
-        app:layout_constraintStart_toStartOf="@+id/etName" />
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/etName1"
+        app:layout_constraintEnd_toEndOf="@+id/etName1"
+        app:layout_constraintStart_toStartOf="@+id/etName1" />
         />
 
     <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/etName"
+        android:id="@+id/etName1"
         android:layout_width="300dp"
+        android:singleLine="true"
+        android:maxLines="1"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toTopOf="@+id/btnStart"
@@ -29,7 +32,7 @@
         android:id="@+id/btnStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="BOTON"
+        android:text="@string/boton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -1,17 +1,21 @@
 # ANDROID MASTER
 
-<p align="center">
-<a href="https://youtu.be/vJapzH_46a8"><img src="https://i.imgur.com/ma1kNJS.jpg" style="height: 75%; width:75%;"/></center></a></p>
+<a href="https://youtu.be/vJapzH_46a8"><img src="https://i.imgur.com/ma1kNJS.jpg" style="height: 75%; width:75%;"/>
 
+</a></p>
 
-Aprende a programar sin conocimientos previos. Empezaremos desde lo más básico hasta conseguir desarrollar una aplicación completa.
+Aprende a programar sin conocimientos previos. Empezaremos desde lo más básico hasta conseguir
+desarrollar una aplicación completa.
 
 ## Aprende a PROGRAMAR aplicaciones ANDROID en KOTLIN desde CERO.
 
-El curso se irá haciendo en DIRECTO en [TWITCH](https://www.twitch.tv/aristidevs), donde además de explicar resolveré dudas y haremos ejercicios. Una vez esté el contenido grabado y editado se irá subiendo a [YOUTUBE](https://www.youtube.com/@aristidevs). 
+El curso se irá haciendo en DIRECTO en [TWITCH](https://www.twitch.tv/aristidevs), donde además de
+explicar resolveré dudas y haremos ejercicios. Una vez esté el contenido grabado y editado se irá
+subiendo a [YOUTUBE](https://www.youtube.com/@aristidevs).
 
-El temario del curso será: 
+El temario del curso será:
 <br />
+
 - [¿Qué es Kotlin?](https://youtu.be/vJapzH_46a8)
 - [Instalar Android Studio para Kotlin](https://youtu.be/vJapzH_46a8?t=200)
 - [Valores y variables en Kotlin](https://youtu.be/vJapzH_46a8?t=1097)
@@ -25,31 +29,30 @@ El temario del curso será:
 - [Arrays en Kotlin](https://youtu.be/vJapzH_46a8?t=9141)
 - [Listas en Kotlin](https://youtu.be/vJapzH_46a8?t=10165)
 - [Desarrollando nuestra primera APP](https://youtu.be/vJapzH_46a8?t=11200)
-  - Navegación de pantallas
+    - Navegación de pantallas
 - [Crear un menú para navegar entre apps](https://youtu.be/vJapzH_46a8?t=14874)
 - [Diseñar y programar app completa IMC](https://youtu.be/vJapzH_46a8?t=15773)
-  - Cambios entre pantallas
-  - Gestión y creación de colores
-  - Diseño de UI
-  - CardView
-  - RangeSlider
-  - Compatibilidad con múltiples idiomas (Strings)
-  - Listeners y clicks
+    - Cambios entre pantallas
+    - Gestión y creación de colores
+    - Diseño de UI
+    - CardView
+    - RangeSlider
+    - Compatibilidad con múltiples idiomas (Strings)
+    - Listeners y clicks
 - [Diseñar y programar app completa TODO](https://youtu.be/vJapzH_46a8?t=23805)
-  - Recyclerview
-  - Dialog
-  - Sealed class
-  - Funciones lambdas
+    - Recyclerview
+    - Dialog
+    - Sealed class
+    - Funciones lambdas
 - [Diseñar y programar una buscador de Superhéroes](https://youtu.be/ndqIqh6joGA?t=9)
-  - SearchView
-  - Consumo de APIs con Retrofit
-  - Funciones lambdas
-  - Recyclerview
+    - SearchView
+    - Consumo de APIs con Retrofit
+    - Funciones lambdas
+    - Recyclerview
 - [Diseñar y programar una pantalla de ajustes con persistencia de datos](https://youtu.be/ndqIqh6joGA?t=10446)
-  - Persistencia de datos con DataStore
-  - Switch y RangeSlider
-  - Modo noche
-
+    - Persistencia de datos con DataStore
+    - Switch y RangeSlider
+    - Modo noche
 
 ---
 
@@ -57,9 +60,9 @@ El temario del curso será:
 
 ### Calculador IMC.
 
-|                               Pantalla principal                               |                                   Resultado                                    |
-|:------------------------------------------------------------------------------:|:------------------------------------------------------------------------------:|
-|  <img src="https://i.imgur.com/F6rSzsI.png" style="height: 50%; width:50%;"/>  |  <img src="https://i.imgur.com/lH1NBas.png" style="height: 50%; width:50%;"/>  |
+|                              Pantalla principal                              |                                  Resultado                                   |
+|:----------------------------------------------------------------------------:|:----------------------------------------------------------------------------:|
+| <img src="https://i.imgur.com/F6rSzsI.png" style="height: 50%; width:50%;"/> | <img src="https://i.imgur.com/lH1NBas.png" style="height: 50%; width:50%;"/> |
 
 ### Organizador de tareas.
 
@@ -84,21 +87,25 @@ El temario del curso será:
 ## Preguntas habituales.
 
 * **¿Necesito saber programar?**
-	* NO, este curso es realmente DESDE CERO.
+    * NO, este curso es realmente DESDE CERO.
 
 * **¿Habrán ejercicios?**
-	* Al final de la clase se pondrán ejercicios que se resolverán al inicio de la clase siguiente.
+    * Al final de la clase se pondrán ejercicios que se resolverán al inicio de la clase siguiente.
 
 * **¿Y si tengo dudas?**
-    * Tienes un canal exclusivo para dudas del curso en el [DISCORD](https://discord.com/invite/SVBExkcGyV?fbclid=IwAR02ojS9ErZfGhl3DQjEZHoX92LX8WWj98JYLVAn7OgMXVrrtf86kfYtvhE) llamado **🖥-twitch-curso-android**.
+    * Tienes un canal exclusivo para dudas del curso en
+      el [DISCORD](https://discord.com/invite/SVBExkcGyV?fbclid=IwAR02ojS9ErZfGhl3DQjEZHoX92LX8WWj98JYLVAn7OgMXVrrtf86kfYtvhE)
+      llamado **🖥-twitch-curso-android**.
 
 ---
 
 ## COLABORA.
 
-Este proyecto es totalmente GRATUITO por lo que puedes aportar tu grano de arena de múltiples formas.
+Este proyecto es totalmente GRATUITO por lo que puedes aportar tu grano de arena de múltiples
+formas.
 
 - Dale a FAV al proyecto (Star)
-- Comparte el [tuit original](https://twitter.com/AristiDevs/status/1598613278430633984) para que llegue a más gente
+- Comparte el [tuit original](https://twitter.com/AristiDevs/status/1598613278430633984) para que
+  llegue a más gente
 - Sígueme en mis [redes sociales](https://aristi.dev)
 - Nomíname a [GITHUB STAR](https://stars.github.com/nominate/)

@@ -1,0 +1,21 @@
+package com.gaston
+
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Button
+import com.aristidevs.androidmaster.R
+
+class MenuActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_menu2)
+        val btnSaludApp = findViewById<Button>(R.id.btnSaludApp)
+        btnSaludApp.setOnClickListener {navigateToSaludApp()}
+    }
+
+    fun navigateToSaludApp() {
+        val intent = Intent(this, FirstAppActivity::class.java)
+        startActivity(intent)
+    }
+}

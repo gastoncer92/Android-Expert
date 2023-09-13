@@ -15,14 +15,20 @@
         android:theme="@style/Theme.AndroidMaster"
         tools:targetApi="31">
         <activity
-            android:name="com.gaston.FirstAppActivity"
+            android:name="com.gaston.MenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
+        </activity>
+        <activity
+            android:name="com.gaston.ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.gaston.FirstAppActivity"
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
@@ -45,7 +51,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".imccalculator.ResultIMCActivity"
+            android:name=".imccalculator.ultIMCActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -61,12 +67,6 @@
         <activity
             android:name=".MenuActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />

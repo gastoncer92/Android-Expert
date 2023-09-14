@@ -38,5 +38,8 @@
     <string name="hola_mundo">hola mundo</string>
     <string name="practica_de_codigo">Escribe tu nombre</string>
     <string name="boton">BOTON</string>
+    <string name="hombre">Hombre</string>
+    <string name="mujer">Mujer</string>
+    <string name="resultado">Resultado</string>
 
 </resources>

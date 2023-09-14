@@ -14,8 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidMaster"
         tools:targetApi="31">
-
-<!--        com.gastondevs.cursoandroid.MenuActivity-->
+        <activity
+            android:name="com.gastondevs.cursoandroid.calculadoraimc.ResultadoIMCActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
             android:name="com.gastondevs.cursoandroid.MenuActivity"
             android:exported="true">
@@ -28,36 +33,28 @@
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-        </activity>
-
-<!--        com.gastondevs.cursoandroid.calculadoraimc.CalculadoraImcActivity-->
+        </activity> <!-- com.gastondevs.cursoandroid.calculadoraimc.CalculadoraImcActivity -->
         <activity
             android:name="com.gastondevs.cursoandroid.calculadoraimc.CalculadoraImcActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-        </activity>
-
-<!--        com.gastondevs.cursoandroid.holapp.HolaActivity-->
+        </activity> <!-- com.gastondevs.cursoandroid.holapp.HolaActivity -->
         <activity
             android:name="com.gastondevs.cursoandroid.holapp.HolaActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-        </activity>
-
-<!--        com.gastondevs.cursoandroid.holapp.ResultActivity-->
+        </activity> <!-- com.gastondevs.cursoandroid.holapp.ResultActivity -->
         <activity
             android:name="com.gastondevs.cursoandroid.holapp.ResultActivity2"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
-        </activity>
-
-<!--        .settings.SettingsActivity-->
+        </activity> <!-- .settings.SettingsActivity -->
         <activity
             android:name=".settings.SettingsActivity"
             android:exported="false" />

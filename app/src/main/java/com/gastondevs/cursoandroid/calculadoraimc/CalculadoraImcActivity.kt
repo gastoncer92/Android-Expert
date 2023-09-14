@@ -1,6 +1,10 @@
 package com.gastondevs.cursoandroid.calculadoraimc
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
@@ -12,15 +16,27 @@ import java.text.DecimalFormat
 
 class CalculadoraImcActivity : AppCompatActivity() {
 
+    //    valores iniciales
     private var isMaleSelected: Boolean = true
     private var isFemaleSelected: Boolean = false
-
+    private var currentWeight: Int = 60
+    private var currentHeight: Int = 120
+    private var currentAge: Int = 60
     private lateinit var viewMale: CardView
     private lateinit var viewFemale: CardView
     private lateinit var tvHeight: TextView
     private lateinit var rsHeight: RangeSlider
     private lateinit var btnSubtractWeight: FloatingActionButton
     private lateinit var btnPlusWeight: FloatingActionButton
+    private lateinit var tvWeight: TextView
+    private lateinit var btnSubtractAge: FloatingActionButton
+    private lateinit var btnPlusAge: FloatingActionButton
+    private lateinit var tvAge: TextView
+    private lateinit var btnCalculate: Button
+
+    companion object{
+        const val IMC_KEY = "IMC_RESULT"
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +46,7 @@ class CalculadoraImcActivity : AppCompatActivity() {
         initUI()
     }
 
+    @SuppressLint("SetTextI18n")
     private fun initListeners() {
         viewMale.setOnClickListener {
             changeGender()
@@ -43,9 +60,56 @@ class CalculadoraImcActivity : AppCompatActivity() {
 
         rsHeight.addOnChangeListener { _, value, _ ->
             val df = DecimalFormat("#.##")
-            val result = df.format(value)
-            tvHeight.text = "$result cm"
+            val currentHeight = df.format(value).toInt()
+            tvHeight.text = "$currentHeight cm"
         }
+
+        btnSubtractWeight.setOnClickListener {
+            currentWeight -= 1
+            // Despues de restar 1, hay que imprimirlo en el TextView
+            setWeight()
+        }
+        btnPlusWeight.setOnClickListener {
+            currentWeight += 1
+            setWeight()
+        }
+
+        btnSubtractAge.setOnClickListener {
+            currentAge -= 1
+            // Despues de restar 1, hay que imprimirlo en el TextView
+            setAge()
+        }
+        btnPlusAge.setOnClickListener {
+            currentAge += 1
+            setAge()
+        }
+        btnCalculate.setOnClickListener {
+            val result = calculateIMC()
+            navigateToResultadoIMC(result)
+        }
+
+
+    }
+
+    private fun navigateToResultadoIMC(result: Double) {
+        val intent=Intent(this, ResultadoIMCActivity::class.java)
+        intent.putExtra(IMC_KEY, result)
+        startActivity(intent)
+    }
+
+
+    private fun calculateIMC():Double {
+        val df = DecimalFormat("#.##")
+        val imc = currentWeight / (currentHeight.toDouble() / 100 * currentHeight.toDouble() / 100)
+        return df.format(imc).toDouble()
+    }
+
+    private fun setWeight() {
+        tvWeight.text = currentWeight.toString()
+    }
+
+    private fun setAge() {
+        tvAge.text = currentAge.toString()
     }
 
     private fun changeGender() {
@@ -58,6 +122,16 @@ class CalculadoraImcActivity : AppCompatActivity() {
         viewFemale = findViewById(R.id.viewFemale)
         tvHeight = findViewById(R.id.tvHeight)
         rsHeight = findViewById(R.id.rsHeight)
+
+        btnSubtractWeight = findViewById(R.id.btnSubtractWeight)
+        btnPlusWeight = findViewById(R.id.btnPlusWeight)
+        tvWeight = findViewById(R.id.tvWeight)
+
+        btnSubtractAge = findViewById(R.id.btnSubtractAge)
+        btnPlusAge = findViewById(R.id.btnPlusAge)
+        tvAge = findViewById(R.id.tvAge)
+
+        btnCalculate = findViewById(R.id.btnCalculate)
     }
 
     private fun setGenderColor() {
@@ -78,6 +152,8 @@ class CalculadoraImcActivity : AppCompatActivity() {
 
     private fun initUI() {
         setGenderColor()
+        setWeight()
+        setAge()
     }
 
 

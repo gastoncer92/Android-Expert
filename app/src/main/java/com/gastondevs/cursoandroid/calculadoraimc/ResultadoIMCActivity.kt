@@ -33,22 +33,26 @@ class ResultadoIMCActivity : AppCompatActivity() {
         tvIMC.text = result.toString()
         Log.i("peso", result.toString())
         when (result) {
-            in 0.00..18.50 -> { // Bajo peso
+            in 0.00..18.50 -> {
+                // Bajo peso
                 tvResult.text = getString(R.string.title_bajo_peso)
                 tvResult.setTextColor(ContextCompat.getColor(this, R.color.peso_bajo))
                 tvDescripcion.text = getString(R.string.description_bajo_peso)
             }
-            in 18.51..24.99 -> { // Peso Normal
+            in 18.51..24.99 -> {
+                // Peso Normal
                 tvResult.text = getString(R.string.title_peso_normal)
                 tvResult.setTextColor(ContextCompat.getColor(this, R.color.peso_normal))
                 tvDescripcion.text = getString(R.string.description_peso_normal)
             }
-            in 30.00..29.99 -> { // Sobrepeso
+            in 30.00..29.99 -> {
+                // Sobrepeso
                 tvResult.text = getString(R.string.title_sobrepeso)
                 tvResult.setTextColor(ContextCompat.getColor(this, R.color.peso_sobrepeso))
                 tvDescripcion.text = getString(R.string.description_sobrepeso)
             }
-            in 30.00..99.99 -> { // Obecidad
+            in 30.00..99.99 -> {
+                // Obecidad
                 tvResult.text = getString(R.string.title_sobrepeso)
                 tvResult.setTextColor(ContextCompat.getColor(this, R.color.obesidad))
                 tvDescripcion.text = getString(R.string.description_obesidad)

@@ -3,29 +3,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/todo_background_todo_app"
+    android:orientation="vertical"
     tools:context="com.gastondevs.cursoandroid.TODOapp2.TodoActivity">
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="35sp"
-        android:text="@string/bienvenido"
-        android:layout_marginVertical="44dp"
         android:layout_marginHorizontal="32dp"
+        android:layout_marginVertical="44dp"
+        android:text="@string/bienvenido"
         android:textColor="@color/white"
-        android:textStyle="bold"
-        />
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAllCaps="true"
-        android:text="@string/todo_categorias"
-        android:textColor="@color/white"
         android:layout_marginHorizontal="32dp"
-        />
+        android:text="@string/todo_categorias"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvCategorias"
@@ -34,5 +33,16 @@
 
         />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:text="@string/todo_tasks"
+        android:textAllCaps="true"
+        android:textColor="@color/white" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 </LinearLayout>
